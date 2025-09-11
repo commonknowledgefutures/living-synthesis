@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Posts/Introduction.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduction"
+              "title": "index"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Posts/Introduction.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Introduction"
+              "title": "Backlinks for index"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Posts/Introduction.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Introduction"
+              "title": "Outgoing links from index"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Posts/Introduction.md",
+                "file": "index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Introduction"
+              "title": "Outline of index"
             }
           },
           {
@@ -199,6 +199,7 @@
   },
   "active": "2d8837e6263008e3",
   "lastOpenFiles": [
+    "Posts/Introduction.md",
     "DiscourseGraph/QUE - What would our scholarly communication infrastructure look like today if we started from scratch, but with all of the tools and infrastructures we have available to us today?.md",
     "DiscourseGraph/PTN - Discourse Graph Models.md",
     "DiscourseGraph/ART - Micropublication model.md",
