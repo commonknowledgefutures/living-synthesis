@@ -1,0 +1,79 @@
+{
+  "nodeTypes": [
+    {
+      "id": "node_UGX7YzwV9ecptfLQ5PU8J",
+      "name": "Question",
+      "format": "QUE - {content}",
+      "color": "#99890e"
+    },
+    {
+      "id": "node_s_3__TUEEX3OcUp-W5T8v",
+      "name": "Claim",
+      "format": "CLM - {content}",
+      "color": "#7DA13E"
+    },
+    {
+      "id": "node_9dIoL9SfjowAH3enNv179",
+      "name": "Evidence",
+      "format": "EVD - {content}",
+      "color": "#DB134A"
+    },
+    {
+      "id": "node_-PaEcbfnt2JyJ9pMzUEG1",
+      "name": "Pattern",
+      "format": "PTN - {content}",
+      "template": "",
+      "color": "#5bd263"
+    },
+    {
+      "id": "node_Up0b9fRZLpxx59c2qMHLH",
+      "name": "Artifact",
+      "format": "ART - {content}",
+      "template": "",
+      "color": "#df5858"
+    },
+    {
+      "id": "node_ZYN1gJQ4YFeUJ8wKIL2IJ",
+      "name": "Source",
+      "format": "@{content}",
+      "template": "",
+      "color": "#888686"
+    }
+  ],
+  "relationTypes": [
+    {
+      "id": "relation_6NSeBg8jigqHD4f1mkjFF",
+      "label": "supports",
+      "complement": "is supported by"
+    },
+    {
+      "id": "relation_Xu1bUp1j8cye4WQNw1Zki",
+      "label": "opposes",
+      "complement": "is opposed by"
+    },
+    {
+      "id": "relation_eNtWGS0agPggbuvvO4J6c",
+      "label": "informs",
+      "complement": "is informed by"
+    }
+  ],
+  "discourseRelations": [
+    {
+      "sourceId": "node_9dIoL9SfjowAH3enNv179",
+      "destinationId": "node_UGX7YzwV9ecptfLQ5PU8J",
+      "relationshipTypeId": "relation_eNtWGS0agPggbuvvO4J6c"
+    },
+    {
+      "sourceId": "node_9dIoL9SfjowAH3enNv179",
+      "destinationId": "node_s_3__TUEEX3OcUp-W5T8v",
+      "relationshipTypeId": "relation_6NSeBg8jigqHD4f1mkjFF"
+    },
+    {
+      "sourceId": "node_9dIoL9SfjowAH3enNv179",
+      "destinationId": "node_s_3__TUEEX3OcUp-W5T8v",
+      "relationshipTypeId": "relation_Xu1bUp1j8cye4WQNw1Zki"
+    }
+  ],
+  "showIdsInFrontmatter": false,
+  "nodesFolderPath": "DiscourseGraph"
+}

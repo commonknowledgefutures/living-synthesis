@@ -1,0 +1,27 @@
+{
+  "pluginList": [
+    "DiscourseGraphs/discourse-graph-obsidian",
+    "blacksmithgu/datacore"
+  ],
+  "pluginSubListFrozenVersion": [
+    {
+      "repo": "DiscourseGraphs/discourse-graph-obsidian",
+      "version": "latest"
+    },
+    {
+      "repo": "blacksmithgu/datacore",
+      "version": "latest"
+    }
+  ],
+  "themesList": [],
+  "updateAtStartup": true,
+  "updateThemesAtStartup": true,
+  "enableAfterInstall": true,
+  "loggingEnabled": false,
+  "loggingPath": "BRAT-log",
+  "loggingVerboseEnabled": false,
+  "debuggingMode": false,
+  "notificationsEnabled": true,
+  "personalAccessToken": "",
+  "selectLatestPluginVersionByDefault": false
+}

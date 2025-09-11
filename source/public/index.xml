@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Common Knowledge Futures: An Experimental Living Synthesis</title>
+      <link>https://https://commonknowledgefutures.github.io/living-synthesis/</link>
+      <description>Last 10 notes on Common Knowledge Futures: An Experimental Living Synthesis</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Home</title>
+    <link>https://https:/commonknowledgefutures.github.io/living-synthesis/</link>
+    <guid>https://https:/commonknowledgefutures.github.io/living-synthesis/</guid>
+    <description>Welcome! This website is an experimental “living synthesis” optimized for synthesis of ideas around new infrastructures for common knowledge. The living synthesis is structured around a “discourse graph” of claims, evidence, and arguments that can be recombined in various ways to surface new insights.</description>
+    <pubDate>Thu, 11 Sep 2025 15:45:45 GMT</pubDate>
+  </item><item>
+    <title>Introduction</title>
+    <link>https://https:/commonknowledgefutures.github.io/living-synthesis/Posts/Introduction</link>
+    <guid>https://https:/commonknowledgefutures.github.io/living-synthesis/Posts/Introduction</guid>
+    <description>I am curious about the question of argumentation schemes as a model for scholarly communication infrastructure. I think that effective synthesis would be more commonplace if we structured our scholarly communication infrastructure in terms of explicit Discourse Graph Models instead of or in addition to the existing document-centric infrastructure.</description>
+    <pubDate>Thu, 11 Sep 2025 15:09:49 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
