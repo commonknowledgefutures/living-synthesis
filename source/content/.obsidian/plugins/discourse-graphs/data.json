@@ -72,8 +72,15 @@
       "sourceId": "node_9dIoL9SfjowAH3enNv179",
       "destinationId": "node_s_3__TUEEX3OcUp-W5T8v",
       "relationshipTypeId": "relation_Xu1bUp1j8cye4WQNw1Zki"
+    },
+    {
+      "sourceId": "node_ZYN1gJQ4YFeUJ8wKIL2IJ",
+      "destinationId": "node_UGX7YzwV9ecptfLQ5PU8J",
+      "relationshipTypeId": "relation_eNtWGS0agPggbuvvO4J6c"
     }
   ],
   "showIdsInFrontmatter": false,
-  "nodesFolderPath": "DiscourseGraph"
+  "nodesFolderPath": "DiscourseGraph",
+  "canvasFolderPath": "Discourse Canvas",
+  "canvasAttachmentsFolderPath": "attachments"
 }

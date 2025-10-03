@@ -1,0 +1,78 @@
+---
+NodeFormality: Internal
+PublishedTo: [[DiscourseGraph]]
+Contributors: [[Jay Patel]]
+EvdSourceType: Literature
+---
+
+> backlink: [[EVD - When SciBERT judged methodological novelty, removing the Self Attention module reduced its F1 score and accuracy by 0.02. - [[@wuAutomatedNoveltyEvaluationa]]]]
+
+## Description
+“We further conducted experiments by removing self-attention based on ChatGPT's feedback to assess its impact. The results indicate a decline in model performance, suggesting that self-attention enhances the model's ability to model sequential data.” (Wu et al., p. 12)
+![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fmegacoglab%2Fkv-61E3GWl.png?alt=media&token=ada2f9fa-4c1e-4c69-965f-16aad19feb52)
+Table 4. Results of method novelty prediction (rows 2 and 5: Ours-SciBert and w/o Self Attention)
+![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fmegacoglab%2FniGt23lVu7.png?alt=media&token=f7fd2732-0cdc-4bbe-a89e-0f011edabdcd)
+## Methods Context
+### What? [ℹ])
+Construct & Operationalization(s)
+`methodological novelty of study reports`: as measured by ICLR’s Technical Novelty and Significance (TNS) as the criterion for method novelty
+“methods, which appears in 57% of the papers analyzed. Starting from ICLR 2022, in addition to soliciting recommendations and confidence scores from reviewers, the requirement for reviewers to provide scores on Technical/Empirical Novelty and Significance has also been introduced, as shown in Figure 2. Considering that ICLR is a top-tier conference in the field of deep learning, where research typically focuses on the model level (most of which pertains to method novelty), and given that Technical Novelty and Significance (TNS) is defined as new models, techniques, or theoretical insights,1 we believe TNS can serve as a standard for evaluating method novelty. Subsequently, we extract the methodology sections from academic papers and input them into ChatGPT2 to obtain summaries regarding the novelty of the methodologies. (pg. 2)”
+Operationalization 1
+Gold-standard labels from per-paper TNS averaged across 3–4 reviewers, with disagreement filtering when max–min exceeds 1, then binarized into Low (1–2) vs High (3–4).
+Operationalization 2
+Dual inputs combining human knowledge (review-derived novelty sentences) and LLM knowledge (ChatGPT summaries of the methods section)
+for prediction.
+“Specifically, we extract sentences related to the novelty of the academic paper from peer review reports and use LLM to summarize the methodology section of the academic paper, which are then used to fine-tune PLMs. (pg. 1)"
+### How? [ℹ])
+Design
+[[m/benchmarking study]]
+IVs: multiple dimensions
+`input source`: human knowledge vs. LLM knowledge
+`knowledge-guided fusion module`: present vs. absent
+`self-attention reduction module`: present vs. absent
+`PLM type`: SciBERT or other
+DVs: `accuracy`, `F1 scores`
+Materials
+Software Systems
+PLMs: pre-trained language models
+BERT
+RoBERTa
+SciBERT
+XLNet
+ALBERT
+LLMs: large language models
+Llama 3.1
+ChatGPT
+GPT-4o
+Claude
+PLMs: modified from baseline architecture
+Ours-BERT
+Ours-RoBERTa
+Ours-SciBERT
+Ours-XLNet
+Ours-ALBERT
+Other: Prompts (zero-shot)
+“We utilized the extracted title and methodology section… to construct the
+prompt for ChatGPT… provide evaluations and summaries of the novelty…
+with a constraint of staying within 200 words… An example is illustrated
+in Figure 3. (pg. 6)"
+“An example is illustrated in Figure 3. In Figure 3, the <Title> in the prompt section is the paper title used to generate feedback, and <Method> represents the methodology section extracted from the paper using manually defined rules. To ensure concise feedback generation, we set a limit of no more than 200 words for the feedback, equivalent to the content of a summary. (pg. 6)"
+Figure 3. An example of our prompt and feedback.
+![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fmegacoglab%2FqpYHbwVTFI.png?alt=media&token=0bc8dd5f-89c5-4bb8-9027-1b0a1ebc8749)
+Measures
+TNS scale and descriptions used as the novelty gold standard for methods (1–4, with semantic descriptors).
+“The distribution of Technical Novelty and Significance scores ranges from 1 to 4… 1: The contributions are neither significant nor novel… 4: The contributions are significant, and do not exist in prior works… we retained only the scores for Technical Novelty and Significance (TNS) as the gold standard for novelty.” (p. 13)
+Study Procedures
+Figure 1. ChatGPT provides feedback and scores for the novelty of the paper's methodology. This paper's novelty score is 3. On the left are the prompts, and on the right are the feedback responses (pg. 2)
+![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fmegacoglab%2F59iey0VjtO.png?alt=media&token=08bcd22a-0b47-4112-8b13-6e8c888dab41)
+source reviews per paper, extract novelty sentences,  inject method/title into prompt, get ChatGPT evaluation of study novelty
+Analyses
+unspecified computations: accuracies and F1 scores
+### Who? [ℹ])
+Population: study reports in CS/ML or more broadly in technical scholarly disciplines
+Sample (dataset): `ICLR 2022 OpenReview`
+3,376 ICLR papers with reviews and decisions collected; after preprocessing,
+filtering, and binarization, the final dataset contains 2,432 labeled
+instances.
+“obtain our peer-review data from the OpenReview platform. The International Conference on Learning Representations (ICLR) is a premier conference in the field of machine learning. We wrote a web crawler code to retrieve a total of 3376 ICLR papers, each containing peer-review comments and its decision, accepted (ACC), rejected (REJ), and withdrawn (WDR). (pg. 6)”
+“the final dataset consists of 2432 instances.” (pg. 7)

@@ -3,7 +3,6 @@ publish: "false"
 authors: "[[Joel Chan]]"
 publishedDate:
 ---
-
 I am curious about the question of argumentation schemes as a model for scholarly communication infrastructure.
 
 I *think* that effective synthesis would be more commonplace if we structured our scholarly communication infrastructure in terms of explicit [[PTN - Discourse Graph Models|Discourse Graph Models]] instead of or in addition to the existing document-centric infrastructure. In other words, my answer to the question [[QUE - What would our scholarly communication infrastructure look like today if we started from scratch, but with all of the tools and infrastructures we have available to us today?]] is at least "a discourse-centric one"!

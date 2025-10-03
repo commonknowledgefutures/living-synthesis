@@ -1,0 +1,13 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - nodeTypeId == "node_UGX7YzwV9ecptfLQ5PU8J"
+    order:
+      - file.name
+      - nodeTypeId
+      - relation_eNtWGS0agPggbuvvO4J6c
+    sort: []
+    columnSize:
+      file.name: 771
